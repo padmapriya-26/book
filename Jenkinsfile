@@ -5,9 +5,9 @@ pipeline {
     stages {
         stage ('time') {
             steps {
-                timeout(time:15,unit:'SECONDS') {
-                    echo "+++sleeping for 15 seconds"
-                    sleep 15
+                timeout(time:50,unit:'SECONDS') {
+                    echo "+++sleeping for 50 seconds"
+                    sleep 50
                 }
                 echo "this is the jenkinsfile"
                 sh "hostname -i"
