@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage ('time') {
             steps {
-                timeout(time:15,unit:'seconds') {
+                timeout(time:15,unit:'SECONDS') {
                     echo "+++sleeping for 15 seconds"
                     sleep 15
                 }
